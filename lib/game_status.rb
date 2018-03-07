@@ -57,7 +57,11 @@ def over?(board)
 end
 
 def winner?(board)
-  token = won?(board)
-  if token == true
+  if !(won?(board))
+    return nil
+  elsif board[won?(board)[0]] == "X"
+    reutrn "X"
+  elsif board[won?(board)[0]] == "O"
+    reutrn "O"
   end
 end
