@@ -61,4 +61,3 @@ def winner?(board)
   if token == true
   end
 end
-  
