@@ -53,11 +53,9 @@ end
 
 def winner?(board)
   if won?(board)
-    win_combination = won?(board)
-    if board[win_combination[0]] == "X"
-      return "X"
-    else
-      return "O"
+    win_token = won?(board)
+    if win_token
+      board[win_token[0]]
     end
   end
 end
