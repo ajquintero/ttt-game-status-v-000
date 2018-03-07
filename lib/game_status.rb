@@ -51,7 +51,7 @@ def over?(board)
   return false
 end
 
-def winner?(board)
+def winner(board)
     win_token = won?(board)
     if win_token
       board[win_token[0]]
