@@ -57,10 +57,12 @@ def over?(board)
 end
 
 def winner?(board)
-  return nil if !(won?(board))
-  if board[won?(board)[0]] == "X"
-    reutrn "X"
-  elsif board[won?(board)[0]] == "O"
-    reutrn "O"
+  if won?(board)
+    win_combination = won?(board)
+    if board[win_combination[0]] == "X"
+      return "X"
+    else
+      return "O"
+    end
   end
 end
