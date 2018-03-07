@@ -33,10 +33,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |cells|
-    if cells == "X" || cells == "O"
-      return true
-    end
+  if !(board.include?(" "))
   end
 end
 
